@@ -30934,6 +30934,108 @@ class FileStore(MessageStore):
 FileStore_swigregister = _quickfix.FileStore_swigregister
 FileStore_swigregister(FileStore)
 
+HAVE_MYSQL = _quickfix.HAVE_MYSQL
+class MySQLStoreFactory(MessageStoreFactory):
+    __swig_setmethods__ = {}
+    for _s in [MessageStoreFactory]: __swig_setmethods__.update(getattr(_s,'__swig_setmethods__',{}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, MySQLStoreFactory, name, value)
+    __swig_getmethods__ = {}
+    for _s in [MessageStoreFactory]: __swig_getmethods__.update(getattr(_s,'__swig_getmethods__',{}))
+    __getattr__ = lambda self, name: _swig_getattr(self, MySQLStoreFactory, name)
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        this = _quickfix.new_MySQLStoreFactory(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def create(self, *args): return _quickfix.MySQLStoreFactory_create(self, *args)
+    def destroy(self, *args): return _quickfix.MySQLStoreFactory_destroy(self, *args)
+    __swig_destroy__ = _quickfix.delete_MySQLStoreFactory
+    __del__ = lambda self : None;
+MySQLStoreFactory_swigregister = _quickfix.MySQLStoreFactory_swigregister
+MySQLStoreFactory_swigregister(MySQLStoreFactory)
+MySQLStoreFactory.DEFAULT_DATABASE = _quickfix.cvar.MySQLStoreFactory_DEFAULT_DATABASE
+MySQLStoreFactory.DEFAULT_USER = _quickfix.cvar.MySQLStoreFactory_DEFAULT_USER
+MySQLStoreFactory.DEFAULT_PASSWORD = _quickfix.cvar.MySQLStoreFactory_DEFAULT_PASSWORD
+MySQLStoreFactory.DEFAULT_HOST = _quickfix.cvar.MySQLStoreFactory_DEFAULT_HOST
+MySQLStoreFactory.DEFAULT_PORT = _quickfix.cvar.MySQLStoreFactory_DEFAULT_PORT
+
+class MySQLStore(MessageStore):
+    __swig_setmethods__ = {}
+    for _s in [MessageStore]: __swig_setmethods__.update(getattr(_s,'__swig_setmethods__',{}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, MySQLStore, name, value)
+    __swig_getmethods__ = {}
+    for _s in [MessageStore]: __swig_getmethods__.update(getattr(_s,'__swig_getmethods__',{}))
+    __getattr__ = lambda self, name: _swig_getattr(self, MySQLStore, name)
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        this = _quickfix.new_MySQLStore(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _quickfix.delete_MySQLStore
+    __del__ = lambda self : None;
+    def set(self, *args): return _quickfix.MySQLStore_set(self, *args)
+    def get(self, *args): return _quickfix.MySQLStore_get(self, *args)
+    def getNextSenderMsgSeqNum(self): return _quickfix.MySQLStore_getNextSenderMsgSeqNum(self)
+    def getNextTargetMsgSeqNum(self): return _quickfix.MySQLStore_getNextTargetMsgSeqNum(self)
+    def setNextSenderMsgSeqNum(self, *args): return _quickfix.MySQLStore_setNextSenderMsgSeqNum(self, *args)
+    def setNextTargetMsgSeqNum(self, *args): return _quickfix.MySQLStore_setNextTargetMsgSeqNum(self, *args)
+    def incrNextSenderMsgSeqNum(self): return _quickfix.MySQLStore_incrNextSenderMsgSeqNum(self)
+    def incrNextTargetMsgSeqNum(self): return _quickfix.MySQLStore_incrNextTargetMsgSeqNum(self)
+    def getCreationTime(self): return _quickfix.MySQLStore_getCreationTime(self)
+    def reset(self): return _quickfix.MySQLStore_reset(self)
+    def refresh(self): return _quickfix.MySQLStore_refresh(self)
+MySQLStore_swigregister = _quickfix.MySQLStore_swigregister
+MySQLStore_swigregister(MySQLStore)
+
+class MySQLLog(Log):
+    __swig_setmethods__ = {}
+    for _s in [Log]: __swig_setmethods__.update(getattr(_s,'__swig_setmethods__',{}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, MySQLLog, name, value)
+    __swig_getmethods__ = {}
+    for _s in [Log]: __swig_getmethods__.update(getattr(_s,'__swig_getmethods__',{}))
+    __getattr__ = lambda self, name: _swig_getattr(self, MySQLLog, name)
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        this = _quickfix.new_MySQLLog(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _quickfix.delete_MySQLLog
+    __del__ = lambda self : None;
+    def clear(self): return _quickfix.MySQLLog_clear(self)
+    def backup(self): return _quickfix.MySQLLog_backup(self)
+    def setIncomingTable(self, *args): return _quickfix.MySQLLog_setIncomingTable(self, *args)
+    def setOutgoingTable(self, *args): return _quickfix.MySQLLog_setOutgoingTable(self, *args)
+    def setEventTable(self, *args): return _quickfix.MySQLLog_setEventTable(self, *args)
+    def onIncoming(self, *args): return _quickfix.MySQLLog_onIncoming(self, *args)
+    def onOutgoing(self, *args): return _quickfix.MySQLLog_onOutgoing(self, *args)
+    def onEvent(self, *args): return _quickfix.MySQLLog_onEvent(self, *args)
+MySQLLog_swigregister = _quickfix.MySQLLog_swigregister
+MySQLLog_swigregister(MySQLLog)
+
+class MySQLLogFactory(LogFactory):
+    __swig_setmethods__ = {}
+    for _s in [LogFactory]: __swig_setmethods__.update(getattr(_s,'__swig_setmethods__',{}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, MySQLLogFactory, name, value)
+    __swig_getmethods__ = {}
+    for _s in [LogFactory]: __swig_getmethods__.update(getattr(_s,'__swig_getmethods__',{}))
+    __getattr__ = lambda self, name: _swig_getattr(self, MySQLLogFactory, name)
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        this = _quickfix.new_MySQLLogFactory(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def create(self, *args): return _quickfix.MySQLLogFactory_create(self, *args)
+    def destroy(self, *args): return _quickfix.MySQLLogFactory_destroy(self, *args)
+    __swig_destroy__ = _quickfix.delete_MySQLLogFactory
+    __del__ = lambda self : None;
+MySQLLogFactory_swigregister = _quickfix.MySQLLogFactory_swigregister
+MySQLLogFactory_swigregister(MySQLLogFactory)
+MySQLLogFactory.DEFAULT_DATABASE = _quickfix.cvar.MySQLLogFactory_DEFAULT_DATABASE
+MySQLLogFactory.DEFAULT_USER = _quickfix.cvar.MySQLLogFactory_DEFAULT_USER
+MySQLLogFactory.DEFAULT_PASSWORD = _quickfix.cvar.MySQLLogFactory_DEFAULT_PASSWORD
+MySQLLogFactory.DEFAULT_HOST = _quickfix.cvar.MySQLLogFactory_DEFAULT_HOST
+MySQLLogFactory.DEFAULT_PORT = _quickfix.cvar.MySQLLogFactory_DEFAULT_PORT
+
 class Application(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, Application, name, value)

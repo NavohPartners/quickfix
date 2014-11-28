@@ -18,6 +18,7 @@
 ** not clear to you.
 **
 ****************************************************************************/
+#define HAVE_MYSQL 1
 
 #ifndef HAVE_MYSQL
 #error MySQLLog.h included, but HAVE_MYSQL not defined

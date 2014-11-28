@@ -39,7 +39,7 @@ const std::string MySQLLogFactory::DEFAULT_DATABASE = "quickfix";
 const std::string MySQLLogFactory::DEFAULT_USER = "root";
 const std::string MySQLLogFactory::DEFAULT_PASSWORD = "";
 const std::string MySQLLogFactory::DEFAULT_HOST = "localhost";
-const short MySQLLogFactory::DEFAULT_PORT = 0;
+const short MySQLLogFactory::DEFAULT_PORT = 3306;
 
 MySQLLog::MySQLLog
 ( const SessionID& s, const DatabaseConnectionID& d, MySQLConnectionPool* p )

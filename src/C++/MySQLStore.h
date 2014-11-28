@@ -18,6 +18,7 @@
 ** not clear to you.
 **
 ****************************************************************************/
+#define HAVE_MYSQL 1
 
 #ifndef HAVE_MYSQL
 #error MySQLStore.h included, but HAVE_MYSQL not defined

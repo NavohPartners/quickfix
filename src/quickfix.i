@@ -33,6 +33,8 @@
 #include <FileLog.h>
 #include <MessageStore.h>
 #include <FileStore.h>
+#include <MySQLStore.h>
+#include <MySQLLog.h>
 #include <Application.h>
 #include <Initiator.h>
 #include <SocketInitiator.h>
@@ -61,6 +63,9 @@ typedef FIX::MessageStore MessageStore;
 typedef FIX::MessageStoreFactory MessageStoreFactory;
 typedef FIX::Mutex Mutex;
 typedef FIX::DOMDocumentPtr DOMDocumentPtr;
+typedef FIX::DatabaseConnectionID DatabaseConnectionID;
+typedef FIX::MySQLConnectionPool MySQLConnectionPool;
+
 %}
 
 %typedef DoubleField PriceField;
@@ -159,6 +164,8 @@ typedef FIX::DOMDocumentPtr DOMDocumentPtr;
 %include "../C++/FileLog.h"
 %include "../C++/MessageStore.h"
 %include "../C++/FileStore.h"
+%include "../C++/MySQLStore.h"
+%include "../C++/MySQLLog.h"
 %include "../C++/Application.h"
 %include "../C++/Initiator.h"
 %include "../C++/SocketInitiator.h"

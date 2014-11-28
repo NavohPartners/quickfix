@@ -243,6 +243,8 @@ def start(self):
 %include <FileLog.h>
 %include <MessageStore.h>
 %include <FileStore.h>
+%include <MySQLStore.h>
+%include <MySQLLog.h>
 %include <Application.h>
 %include <Initiator.h>
 %include <SocketInitiator.h>
